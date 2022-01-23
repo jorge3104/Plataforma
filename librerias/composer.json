@@ -1,0 +1,10 @@
+{
+"name": "olivera/olivera",
+"description": "web Proyect",
+" require " : {
+    " phpoffice / phpword " : " v0.18. * "
+},
+    "require": {
+        "phpoffice/phpword": "^0.18.2"
+    }
+}

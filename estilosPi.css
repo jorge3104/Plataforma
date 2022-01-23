@@ -1,0 +1,321 @@
+:root{ /*puesdes reutilazr los valores  y aqui se declaran las varibles*/
+    --azul:#150FE0;
+    --dorado: #A7A520;
+    --negro:#17202A;
+    --botonesF:font-family: 'Roboto', sans-serif;
+    --botonesIn:font-family: 'Quicksand', sans-serif;;
+        
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+ 
+    scroll-snap-type: mandatory;/* sirve para darle scroll a nuestras paginas */
+    }  /* SIEMPRE USAR definir para que se vea mejor en cualquier dispositivo y se pueda usar mejor el rem*/
+*, *:before, *:after{
+    box-sizing: inherit;
+
+}
+
+/*body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, #5965a5 0%, #ffffff 100%);/*degradado en la pagina*/
+  
+   
+.Encabezado{
+    
+    margin-top: 1rem;
+    position: center;
+    
+  
+          }
+         
+
+
+/*.imagen1{SEGUNDA OPCION DE ESCUDOS
+    width: 200px;
+    height: 200px;
+    margin-left: 5rem;
+    padding-top: 2rem;
+}
+.imagen2{
+    width: 250px;
+    height: 150px;
+    margin-left: 90rem;
+    padding-top: 2rem;
+}*/
+h1{
+    font-size: 3rem;
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    text-transform:uppercase ;    
+    color:var(--dorado);
+}
+.middle{
+   
+    font-size: 4rem;
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    text-transform:uppercase ; 
+    color:var(--dorado);
+}
+/*h2{  TECNOLOGICO NACIONAL  FORMATO
+    font-size: 20px;
+    font-family: 'Proza Libre', sans-serif;
+    text-align: center;
+    text-transform:uppercase ; 
+}*/
+h3{
+    font-size: 4rem;
+    font-family: 'Frank Ruhl Libre', serif;
+    text-align:center;
+    margin-top: 3rem;
+}
+.cerrar{
+    text-align: right;
+    font-size: 20px;
+    margin-right: 2rem;
+
+}
+.cerrar a{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif
+}
+/*.navegacion{
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(56, 38, 214, 0.829);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(56, 38, 214, 0.829);
+    box-shadow: 0px 0px 15px 0px rgba(56, 38, 214, 0.829);
+    
+    padding: 2rem;
+    border-radius: .5rem; 
+    margin-right: 5rem;
+    margin-left: 5rem;
+      
+  gap: 15rem; 
+  display: flex;
+  justify-content:  center;
+  
+}
+.navegacion__enlace{
+    font-size: 3rem;
+    color:black;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif
+
+}
+.navegacion__enlace:hover{
+    color: var(--azul);
+}*/
+
+
+.navegacion{
+ 
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(56, 38, 214, 0.829);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(56, 38, 214, 0.829);
+    box-shadow: 0px 0px 15px 0px rgba(56, 38, 214, 0.829);
+    margin-right: 1rem;
+    margin-left: 1rem;
+    justify-content:  center;
+  }
+  nav {
+    width: 100%;
+    margin:0 auto;
+    position: relative;
+    padding-left: .5rem;
+    margin:10px 10px 10px 10px;
+    
+  }
+nav ul {
+    list-style: none;
+  }
+  nav > ul > li {
+    float: left;
+    
+  }
+  nav ul::after {
+    content: '';
+    display: block;
+    clear: both;
+    
+  }
+  nav ul li a {
+    display: inline-block;
+    color: rgb(22, 22, 22);
+    padding: 20px 20px;
+    text-decoration: none;
+    width: 300px;
+    text-align: center;
+    font-size: 2rem;
+  
+    
+  }
+  
+  
+ nav ul li a:hover {
+    background-color: #102CDA;
+    color: var(--negro);
+  }
+  
+  /* Segundo nivel **/
+  
+  nav ul ul {
+    position: absolute;
+    top:100%;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(56, 38, 214, 0.829);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(56, 38, 214, 0.829);
+    box-shadow: 0px 0px 15px 0px rgba(56, 38, 214, 0.829);
+    display: none; 
+    color: var(--negr);
+    
+  }
+  nav ul li:hover > ul {
+    display: block;
+    background-color: #FFFFFF;
+    
+  }
+  nav ul li:hover {
+    background-color: #889CE6 ;  
+  }
+  
+  
+  
+#fondo{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    height: 450px;
+    
+
+  
+  }
+/*formulario de Datos de la empresa*/
+  .formulario{
+    width: 100%;/*toma parametos, utiliza el valor mas pequeño*/
+   border-radius: 1rem;/*esquinas redondeadas*/
+  margin-top: 3rem;
+  margin-left: 15rem;
+}
+.formulario p{
+font-size: 2.5rem;
+font-family: 'Proza Libre', sans-serif;
+text-align: center;
+font-weight:700;
+text-transform: uppercase;
+
+}
+.formulario__campos{
+    display: grid;
+    grid-template-columns: 80% 80%;/*para que agarre una porcion conciderada y haga dos columnas*/
+    grid-template-rows: auto auto 20rem ;/*este aplica para hacer filas*/
+    column-gap: 2rem;/*para la separacion entre columnas*/
+    
+}
+.formulario_U{
+    width: 50rem;
+    background-color: red;
+}
+.formulario_U input{
+background: red;
+}
+
+.campos{
+    margin-bottom: 1rem;
+}
+.campos label{
+    color: black;
+    font-size: large;
+    margin-bottom: 1rem;
+    display: block;/* para que se alinen los campos */
+    font-family: 'Oxygen', sans-serif;
+    margin-left: 5rem;
+}
+.campos_inp{
+    margin-bottom: 1rem;
+    padding: .5rem;
+    margin-left: 5rem;
+    font-family: 'EB Garamond', serif;
+    width: 40%;
+    font-size: medium;
+  
+}
+.boton_R{
+    margin-top: 2rem;
+    margin-left: 10rem;
+    width: 200px;
+    height: 50px;
+    font-size: 2rem;
+    background-color: #FDFEFE ;
+    text-transform: uppercase;
+    font-family: 'Proza Libre', sans-serif;
+    border-radius: 106px 106px 106px 106px;
+    -moz-border-radius: 106px 106px 106px 106px;
+    -webkit-border-radius: 106px 106px 106px 106px;
+    border: 0px solid #000000;
+    margin-bottom: 2rem; 
+    
+
+    }
+    .boton_R:hover{
+        color: rgba(56, 38, 214, 0.829);
+       
+       }
+
+       /*botones de Docuemntos*/
+
+       .boton_D{
+    margin-top: 10rem;
+    margin-left: 50rem;
+    width: 500px;
+    height: 80px;
+    font-size: 2rem;
+    background-color: #057e41 ;
+    text-transform: uppercase;
+    font-family: 'Proza Libre', sans-serif;
+    border-radius: 106px 106px 106px 106px;
+    -moz-border-radius: 106px 106px 106px 106px;
+    -webkit-border-radius: 106px 106px 106px 106px;
+    border: 0px solid #000000;
+    margin-bottom: 2rem; 
+    display: flex;
+    display:block;
+
+    }
+    .boton_D:hover{
+        color: rgba(1, 0, 3, 0.829);
+       
+       }
+    .alerta{
+        color: rgb(201, 11, 11);
+      
+       }
+
+       /*estilos de tabla*/
+       .table {
+           width:120rem;
+         
+font-size: 2rem;
+text-align: center;
+margin-left: 4rem;
+       }
+.nav {
+  font-size: 2.5rem;
+  margin-right: 5rem;
+}
+.bienvenida p{
+  text-align: center;
+  font-size: 5rem;
+  color: var(--azul);
+  text-transform: uppercase;
+
+}
+.table{
+  width: 93%;
+
+} 
+.Folio{
+  color: red;
+  font-weight: bold;
+  
+
+  }

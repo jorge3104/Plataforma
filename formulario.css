@@ -1,0 +1,192 @@
+:root{ /*puesdes reutilazr los valores  y aqui se declaran las varibles*/
+    --azul:#150FE0;
+    --dorado: #A7A520;
+    --blanco: #FFFFFF;
+    --botonesF:font-family: 'Roboto', sans-serif;
+    --botonesIn:font-family: 'Quicksand', sans-serif;;
+        
+}
+.formulario{
+         width: 95%;/*toma parametos, utiliza el valor mas pequeño*/
+        border-radius: .5rem;/*esquinas redondeadas*/
+       text-align: center;
+        margin-left: 7rem;
+
+           
+}
+.formulario p{
+    font-size: 2rem;
+    font-family: 'Proza Libre', sans-serif;
+    text-align: center;
+    font-weight:700;
+    text-transform: uppercase;
+   
+
+    }
+.formulario fieldset{
+    border-radius: 1rem;
+    border-color: 1AA44B;
+    -webkit-box-shadow: 10px 22px 19px 2px rgba(18,175,30,1);
+-moz-box-shadow: 10px 22px 19px 2px rgba(18,175,30,1);
+box-shadow: 5px 12px 9px 2px rgba(18,175,30,1);
+
+
+    
+}
+.formulario__campos{
+    display: grid;
+    grid-template-columns: 80% 80%;/*para que agarre una porcion conciderada y haga dos columnas*/
+    grid-template-rows: auto auto 20rem ;/*este aplica para hacer filas*/
+    column-gap: 2rem;/*para la separacion entre columnas*/
+   
+
+   }
+   .fromulario-entrada {
+    width: 95%;/*toma parametos, utiliza el valor mas pequeño*/
+    border-radius: .5rem;/*esquinas redondeadas*/
+   text-align: center;
+    margin-left: 2.5rem;
+
+}
+   .fromulario-entrada fieldset{
+   border-radius: 1rem;
+    border-color: 1AA44B;
+    -webkit-box-shadow: 10px 22px 19px 2px rgb(21, 160, 33);
+-moz-box-shadow: 10px 22px 19px 2px rgba(18,175,30,1);
+box-shadow: 5px 12px 9px 2px rgba(18,175,30,1);
+margin-bottom: 2rem;
+}
+.campos{
+    margin-bottom: 1rem;
+}
+.campos label{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;/* para que se alinen los campos */
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 2rem;
+}
+
+.campos_inp{
+    height: 4rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    margin-left: 2rem;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+  
+}
+.campos_entrada{/*Formulario de fase 1*/
+    width: 45rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    margin-left: 2rem;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 1.5rem;
+    
+}
+.campos_inpN{
+  
+    margin-bottom: 1rem;
+    padding: .5rem;
+    margin-left: 5rem;
+    font-family: 'Hind Madurai', sans-serif;
+    width: 40%;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+ }
+
+#secR{
+    font-size:2rem;
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+.TipoE{
+ font-size: 3rem;
+ width: 100%;/*toma parametos, utiliza el valor mas pequeño*/
+        border-radius: 1rem;/*esquinas redondeadas*/
+        text-align: center;
+       padding-top: 2rem;
+       padding-bottom: 2rem;
+      
+
+}
+.TipoE fieldset{
+border: none;
+position: center;
+
+}
+.TipoE label {
+font-size: 3rem;
+
+}
+
+.btn-outline-success{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 15rem;
+    height: 40px;
+    font-size: 1.5rem;
+  
+ 
+}
+
+.boton_C{
+    margin-top: 2rem;
+    margin-left: 10rem;
+    width: 200px;
+    height: 50px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Proza Libre', sans-serif;
+  text-decoration: none;
+     
+    }
+    .siguiente{
+        border: none;
+    }
+    .titulo p {
+font-size: 2.5rem;
+font-family: var(--botonesIn);
+text-transform: uppercase;
+font-weight:550;
+text-align: center;
+    }
+/*errores de formulario cuando se dejan campos vacios*/
+@media (min-width: 768px){
+
+}
+/*.alerta /*{
+color: rgb(201, 11, 11);
+    font-size: 2rem;
+text-align: center;
+padding: .5rem;
+text-transform: uppercase;
+margin:1rem 0;
+font-weight: bolder;
+margin-left:1rem ;*/
+
+       
+    
+       .form-control {
+           width: 40rem;
+          margin-left: 42rem;
+          justify-content: center;
+           font-size: 1.5rem;
+
+       }
+.Mensj{
+    font-size: 2rem;
+   
+    margin-right: 1rem;
+
+  
+}   
+.form-select{
+    width: 45rem;
+    margin-left:42rem;
+    font-size: 1.5rem;
+}    
